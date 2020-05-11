@@ -1,0 +1,44 @@
+body{
+    background-image:url("https://macmagazine.uol.com.br/wp-content/uploads/2018/06/04-wallpaper_macos-mojave.jpg");
+    font: normal 15px Arial;
+}
+
+.menu>ul {
+    display: flex;
+    list-style-position: outside;
+    font: normal 18px Arial;
+    justify-content:space-evenly;
+    color:white;
+}
+
+.menu li{
+    background-color: white;
+    border-radius: 15px;
+    width: 170px;
+    text-align: center;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue
+}
+
+.titulos{
+    padding: 5px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    width: 400px;
+    margin: auto;  
+    margin-top: 50px;
+}
+
+.titulo{
+    font: normal 41px Arial;
+}
