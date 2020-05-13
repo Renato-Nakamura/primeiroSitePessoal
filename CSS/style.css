@@ -1,44 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
 body{
     background-image:url("https://macmagazine.uol.com.br/wp-content/uploads/2018/06/04-wallpaper_macos-mojave.jpg");
-    font: normal 15px Arial;
+    font-size:11px;
+}
+
+@media(min-width: 350px){
+    body{
+    font-size: 13px;
+    }
+}
+
+@media (min-width: 700px){
+    body{
+        font-size: 16px;
+    }
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .menu>ul {
-    display: flex;
-    list-style-position: outside;
-    font: normal 18px Arial;
-    justify-content:space-evenly;
     color:white;
+    display: flex;
+    font-size: 1em;
+    justify-content:space-evenly;
+    list-style-position: outside;
+    position: fixed;
+    top:0;
+    width: 100vw;
+    background-image:url("https://macmagazine.uol.com.br/wp-content/uploads/2018/06/04-wallpaper_macos-mojave.jpg");
+    height: auto;
+    padding: 5px;
 }
 
 .menu li{
     background-color: white;
     border-radius: 15px;
-    width: 170px;
     text-align: center;
-
+    width: 97px;
+}
+@media(min-width: 350px){
+    .menu li{
+        width: 90px;
+    }
 }
 
-a{
+@media (min-width: 700px){
+    .menu li{
+        width: 110px;
+    }
+}
+
+.menu a{
     color:black;
+    display: block;
+    padding: 5px 10px;
     text-decoration: none;
 }
 
-a:hover{
+.menu a:hover{
+    color: blue;
     text-decoration: underline;
-    color: blue
 }
 
 .titulos{
-    padding: 5px;
     text-align: center;
-    background: white;
-    border-radius: 15px;
-    width: 400px;
-    margin: auto;  
-    margin-top: 50px;
+    border: 2px solid whitesmoke;
+    width: 500px;
+    margin:auto;
+    border-radius: 25px;
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 35px;
 }
 
 .titulo{
-    font: normal 41px Arial;
+    font-size: 2.62em;
+}
+
+.seta{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.seta .descer{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.seta .descer:hover{
+    border-radius: 46%;
+}
+
+.portfolio{
+    text-align: center;
+}
+
+.portfolio h2 {
+    padding: 15px;
+}
+
+.portfolio .grid{
+    display:grid;
+    row-gap: 50px;
+}
+
+@media(min-width: 750px){
+    .portfolio .grid{
+    grid-template-columns: 50vw 50vw;
+    }
+}
+
+@media(min-width: 1200px){
+    .portfolio .grid{
+    grid-template-columns: 33vw 33vw 33vw;
+    }
+}
+
+.img-portfolio{
+    width: 55vw;
+    height: 31vw;
+    border: 2px solid white;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+@media(min-width: 750px){
+    .img-portfolio{
+        width: 40vw;
+        height: 29vw;
+    }
+}
+
+@media(min-width: 1200px){
+    .img-portfolio{
+        width: 25vw;
+        height: 14vw;
+    }
 }
