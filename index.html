@@ -6,15 +6,15 @@
     <title>Renato Nakamura</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e821c2cdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Imagens</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Imagens</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="titulos">
@@ -25,12 +25,35 @@
                 Químico e futuro programador!
             </h2>
         </div>  
-        <figure class="seta">
-            <img class="descer" src="./img/seta.png" alt="seta">
-        </figure>
+        <a class="seta"  href="#sobre">
+            <i class="fas fa-angle-down"></i>
+        </a>
     </header>
 
-    <section class="portfolio">
+    <section class="sobre" id="sobre">
+      <h2>Sobre</h2>
+      <figure class="perfil">
+        <img src="https://scontent.fsjk1-1.fna.fbcdn.net/v/t31.0-8/19250709_1150556258379619_4449373164134224108_o.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=rVqV3_CkK8YAX834f_j&_nc_ht=scontent.fsjk1-1.fna&oh=586a507f1f927aa3e45e9ef25d38b2e0&oe=5EE4AC5A" alt="perfil">
+      </figure>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quisquam, doloribus beatae nemo explicabo blanditiis suscipit facere ipsam optio omnis reiciendis magnam et qui fuga, voluptatibus doloremque maxime a? Tenetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus et necessitatibus, facere molestiae quasi, cupiditate natus explicabo facilis animi tempora quos qui, tenetur placeat voluptas! Est quaerat quos odio consectetur?
+        </p>
+        <p>
+          Ullam mollitia pariatur, ipsa minus sint repellat quos a porro ipsam perferendis aliquam est quae voluptatem ut eligendi dolorum placeat inventore voluptatum deserunt voluptates autem. Porro nobis incidunt optio voluptates.
+        </p>
+        <p>
+          Eveniet, natus alias tempore doloremque voluptate veniam totam? Beatae quasi, libero debitis possimus dolor accusantium suscipit omnis odit dolore nisi necessitatibus dolorem, praesentium est numquam nesciunt pariatur exercitationem soluta saepe.
+
+        </p>
+        <p>
+           Necessitatibus, maxime, ex magnam dolorem quibusdam debitis et alias perferendis eos harum omnis nemo. Officia possimus quisquam at harum ipsum molestias error. Eum nemo eius voluptatem iure sequi tempora aliquam?
+        </p>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
         <h2>Imagens</h2>
         <div class="grid">
 			<figure>
@@ -54,8 +77,26 @@
 				<figcaption>Represa</figcaption>
 			</figure>
 		</div>
-		
     </section>
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+          <div class="gridicons">
+          <a target="_blank" href="https://github.com/vanessametonini">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/vanessametonini">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://linkedin.com/in/vanessametonini">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:vanessa.tonini@caelum.com.br">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
+      </section>
+
     <footer>
         Imagens meramente ilustrativas. Fotografias por Renato Nakamura.
     </footer>

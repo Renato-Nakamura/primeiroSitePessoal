@@ -37,9 +37,9 @@ header{
     position: fixed;
     top:0;
     width: 100vw;
-    background-image:url("https://macmagazine.uol.com.br/wp-content/uploads/2018/06/04-wallpaper_macos-mojave.jpg");
     height: auto;
     padding: 5px;
+    background-color: rgba(000, 000, 120, 0.7)
 }
 
 .menu li{
@@ -47,6 +47,7 @@ header{
     border-radius: 15px;
     text-align: center;
     width: 97px;
+    transition: transform 200ms;
 }
 @media(min-width: 350px){
     .menu li{
@@ -60,16 +61,23 @@ header{
     }
 }
 
+.menu li:active,
+.menu li:hover{
+    transform: scale(1.1);
+}
+
 .menu a{
     color:black;
     display: block;
     padding: 5px 10px;
     text-decoration: none;
+    transition: transform 200ms;
 }
 
+.menu a:active,
 .menu a:hover{
-    color: blue;
-    text-decoration: underline;
+        color: blue;
+        text-decoration: underline;
 }
 
 .titulos{
@@ -92,28 +100,56 @@ header{
     position: fixed;
     bottom: 0;
     right: 0;
+    font-size: 50px;
+    color:white;
 }
 
-.seta .descer{
-    width: 50px;
-    border-radius: 50%;
+.seta:active,
+.seta:hover{
+    transform: scale(1.1);
 }
 
-.seta .descer:hover{
-    border-radius: 46%;
+.sobre{
+    min-height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-.portfolio{
+.perfil{
     text-align: center;
 }
 
+.perfil img{
+    height: 30em;
+    border: solid 1px white;
+    border-radius: 15px;
+}
+
+.sobre p{
+    margin: 10px;
+    text-align: justify;
+}
+
+@media(min-width: 550px){
+    .perfil img{
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+.sobre h2,
+.contato h2,
 .portfolio h2 {
     padding: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em
 }
 
 .portfolio .grid{
     display:grid;
     row-gap: 50px;
+    text-align: center;
 }
 
 @media(min-width: 750px){
@@ -148,4 +184,24 @@ header{
         width: 25vw;
         height: 14vw;
     }
+}
+
+.contato{
+    height: 50vh;
+    margin-top: 50px;
+}
+
+.contato .gridicons{
+    font-size:10em;
+    text-align: center;
+}
+
+.contato a{
+    color: white;
+    text-decoration: none;
+}
+
+.contato a:active,
+.contato a:hover{
+    text-shadow: 0px 0px 5px white;
 }
